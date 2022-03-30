@@ -33,3 +33,13 @@ Intended to run on a little vserver somewhere in the cloud; for one household.
 
 ahhh, i don't know yet
 
+## implementation
+
+* I think i'll try to use gunicorn as WSGI server
+     * small rest api to issue commands, edit the shedule, list files in store. what do i need for streaming?
+     * utilize 'captain' module to enqueue commands
+     * litte backend/daemon that 1.) listen/executes captain commands, 2.) executes commands to fullfill the shedule
+* dont' know if i need werkzeug or flask
+* mmmh, i liked svelte a while ago but i probably don't need it
+* mmmh, i liked tailwindcss a while ago but i probably don't need it
+
